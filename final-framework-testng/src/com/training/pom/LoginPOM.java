@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPOM {
 	private WebDriver driver; 
 	
-	public LoginPOM(WebDriver driver) {
+	public LoginPOM(WebDriver driver) 
+	{
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
@@ -21,6 +22,8 @@ public class LoginPOM {
 	
 	@FindBy(id="formLogin_submitAuth")
 	private WebElement loginBtn; 
+	
+	
 	
 	public void sendUserName(String userName) {
 		this.userName.clear();
