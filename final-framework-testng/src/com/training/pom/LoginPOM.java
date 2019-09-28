@@ -14,7 +14,7 @@ public class LoginPOM {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="login")
+	@FindBy(id="userName")
 	private WebElement userName; 
 	
 	@FindBy(id="password")
